@@ -2,5 +2,9 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>MainScreen.qml</file>
+        <file>Lesson.qml</file>
+        <file>Panel.qml</file>
+        <file>KeyBoard.qml</file>
+        <file>TextToLearn.qml</file>
     </qresource>
 </RCC>
