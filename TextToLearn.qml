@@ -1,14 +1,16 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.3
+import QtQuick.Controls 2.5
 
 Item {
-        Rectangle{
+        ScrollView{
             id: textToLearn
             anchors.fill: parent
-            color: "Green"
             Text{
-                text: "Text to train"
                 anchors.centerIn: parent
+            }
+            TextArea{
+               placeholderText: "enter here text to train"
             }
         }
 
