@@ -1,5 +1,9 @@
-var leftPositions = ["15", "55", "95", "135", "175", "215", "255", "295", "335", "15", "55", "95", "135", "175", "215", "255", "295", "325", "365", "345"];
-var topPositions = ["10", "10", "10", "10" , "10", "10", "10", "10", "10", "50", "50" , "50" , "50" , "50" , "50" , "50" , "50", "50", "50", "50" ];
+var leftPositions = ["15", "95",  "175",  "255",  "335", "415",
+                     "15",  "95",  "175",  "255",  "335",  "415",
+                     "15",  "95",  "175",  "255",  "335",  "415"];
+var topPositions = ["10",  "10",   "10",  "10",  "10", "10",
+                    "50",   "50" ,   "50" ,   "50" ,  "50",  "50",
+                    " 90", "90", "90", "90", "90", "90" ];
 
 function getLeftPosition(index){
 
@@ -10,6 +14,11 @@ function getLeftPosition(index){
 function getTopPosition(index){
     console.log(parseFloat(topPositions[index]));
     return parseFloat(topPositions[index]);
+}
+
+function getLength()
+{
+    return topPositions.length;
 }
 
 

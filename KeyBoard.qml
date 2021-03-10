@@ -8,12 +8,13 @@ Item {
         anchors.fill: parent
         color: "green"
             Repeater{
-                model: 15
+                model: KeyData.getLength()
 
                 Key{
-                    width: 25; height: 25
+                    width: 70; height: 30
                     x: KeyData.getLeftPosition(index)
                     y: KeyData.getTopPosition(index)
+                    keyLabel: "\u0628"
                 }
             }
 
