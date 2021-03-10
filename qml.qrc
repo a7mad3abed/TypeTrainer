@@ -6,5 +6,7 @@
         <file>Panel.qml</file>
         <file>KeyBoard.qml</file>
         <file>TextToLearn.qml</file>
+        <file>Key.qml</file>
+        <file>keyData.js</file>
     </qresource>
 </RCC>
