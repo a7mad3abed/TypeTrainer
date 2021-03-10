@@ -7,6 +7,7 @@ Window {
     visible: true
     title: qsTr("Hello World")
 
+    //here is the main sreen
     MainScreen{
         id: mainScreen
         anchors.fill: parent
