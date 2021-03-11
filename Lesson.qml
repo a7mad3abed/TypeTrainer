@@ -23,7 +23,7 @@ Item {
             Layout.fillHeight: true
             Layout.maximumHeight: layout.height*2/5
 
-            }
         }
     }
+}
 
