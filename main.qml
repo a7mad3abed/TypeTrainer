@@ -7,6 +7,7 @@ Window {
     visible: true
     title: qsTr("Hello World")
 
+    //comment from Ubuntu
     //here is the main sreen
     MainScreen{
         id: mainScreen
