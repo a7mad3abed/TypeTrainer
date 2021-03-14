@@ -8,7 +8,7 @@ Window {
     title: qsTr("Hello World")
 
     //comment from Ubuntu
-    //here is the main sreen
+    //here is Mate
     MainScreen{
         id: mainScreen
         anchors.fill: parent
