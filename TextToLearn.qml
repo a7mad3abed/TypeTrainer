@@ -7,6 +7,16 @@ Item {
         signal letterTyped(string textTyped)
         ScrollView{
 
+        Timer{
+            id: labelTimer
+            interval: 300
+            running: false
+            repeat: false
+            onTriggered: textToLearn.letterTyped("")
+
+
+        }
+
             anchors.fill: parent
             TextArea{
                id: textBeingTipped
@@ -16,8 +26,10 @@ Item {
                     textToLearn.letterTyped(event.key.toString(16))
                }
                Keys.onReleased: {
-                   textToLearn.letterTyped("")
+                   labelTimer.start()
+
                }
+
 
 
             }
