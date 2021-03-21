@@ -8,13 +8,16 @@ Item {
     Rectangle{
         id: keyBoard
         anchors.fill: parent
+        border.color: "black"
+        border.width: 1
+        radius: 5
 
         color: "#F3F3F4"
             Repeater{
                 model: KeyData.getLength()
 
                 Key{
-                    width: KeyData.keyWidth[index]; height: 37
+                    width: KeyData.keyWidth[index]; height: 49
                     x: KeyData.getLeftPosition(index)
                     y: KeyData.getTopPosition(index)
                     keyLabel: KeyData.unicodeLettersArabic[index]

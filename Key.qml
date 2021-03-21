@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import "keyData.js" as KeyData
 
 Item {
     property alias keyLabel: keyLabel.text
@@ -22,7 +23,7 @@ Item {
             anchors.fill: parent
             onClicked: {
 
-                console.log("clicked: " + keyLabel.text)
+                console.log(KeyData.unicodeLettersArabic[1])
             }
         }
     }
