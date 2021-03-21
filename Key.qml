@@ -9,7 +9,7 @@ Item {
         id: key
         anchors.fill: parent
         radius: 3
-        border.width: 2
+        border.width: 0.5
         border.color: "black"
         opacity: 1.0
 
