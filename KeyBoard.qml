@@ -18,13 +18,12 @@ Item {
                 model: KeyData.getLength()
 
                 Key{
+                    id: key
                     width: KeyData.getWidth(index)*keyBoard.scaleUnit  ;height: index !== 41 ? 49 : 51
                     x: KeyData.getLeftPosition(index)*keyBoard.scaleUnit
                     y: KeyData.getTopPosition(index)
                     keyLabel: KeyData.unicodeLettersArabic[index]
-                    keyColor:  {
-                        textTypedInLesson === KeyData.numericValueOfLetters[index] ? "blue" : "#F3F3F4"
-            }
+                    state: textTypedInLesson === KeyData.numericValueOfLetters[index] ? "keyColorOne" : "keyColorTwo"
         }
         }
     }

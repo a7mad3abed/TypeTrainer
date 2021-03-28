@@ -27,7 +27,8 @@ Item {
                     console.log(event.key.toString(16))
                }
                Keys.onReleased: {
-                   labelTimer.start()
+                   //labelTimer.start()
+                   textToLearn.letterTyped("")
 
                }
 
